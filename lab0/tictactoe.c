@@ -36,8 +36,21 @@ bool has_free_cell(char board[BOARD_SIZE][BOARD_SIZE])
     board = board;
 
     // IMPLEMENTAR
+    for (int row = 0; row < BOARD_SIZE; <  ++row)
+    {
+        for (int column = 0; column < BOARD_SIZE; ++column)
+        {
+            if (board[row][column] == '-')
+            {
+                return true;
+            }
+            
+        }
+        
+    }
+    
 
-    return true;
+    return false;
 }
 
 int main(void)
